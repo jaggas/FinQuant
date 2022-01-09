@@ -42,7 +42,7 @@ plt.rcParams["figure.figsize"] = (10, 6)
 # <codecell>
 
 # read data from files:
-df_data_path = pathlib.Path.cwd() / ".." / "data" / "ex1-stockdata.csv"
+df_data_path = "data/ex1-stockdata.csv"
 df_data = pd.read_csv(df_data_path, index_col="Date", parse_dates=True)
 # building a portfolio by providing stock data
 pf = build_portfolio(data=df_data)
@@ -266,8 +266,6 @@ print(goog_prices.head(3))
 print(goog.comp_daily_returns().head(3))
 
 # <codecell>
-
-print(goog.expected_return)
 
 # <codecell>
 

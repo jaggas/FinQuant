@@ -4,6 +4,7 @@
 *.pyc
 *.ipynb
 .ipynb_checkpoints
+*venv/
 
 #######################
 # Documentation files #
